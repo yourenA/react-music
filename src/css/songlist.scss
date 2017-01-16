@@ -1,0 +1,104 @@
+.list-content{
+	table{
+		width: 100%;
+		font-family: "Arial";
+		font-size: 12px;
+		color: #666666;
+		border: none;
+		border-collapse:collapse;
+		thead tr{
+			height: 28px;
+			line-height: 28px;
+			border-top: 1px solid #C52F30;
+			border-bottom: 1px solid #E1E1E2;
+			th{
+				font-weight: normal;
+				padding: 0 9px;
+				text-align: left;
+				border-right: 1px solid #E1E1E2;
+				&:nth-child(1){
+					width: 30px;
+				}
+				&:nth-child(2){
+					width: 30px;
+				}
+				&:nth-child(2){
+					width: 42px;
+				}
+				&:last-child{
+					width: 8%;
+					border-right: none;
+				}
+			}
+		}
+		tbody tr{
+			height: 28px;
+			line-height: 28px;
+			&:nth-child(2n){
+				background: #F5F5F7;
+			}
+			&:hover{
+			}
+			td{
+				padding:  0 9px;
+			}
+		}
+	}
+	.m-heart{
+		float: left;
+		width: 20px;
+		height: 28px;
+		cursor: pointer;
+	}
+	.cell-add{
+		float: right;
+		width: 20px;
+		height: 28px;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+#caseBlanche {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	left: calc( 50% + 100px) ;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	#rond {
+		height: 100px;
+		width: 100px;
+		border: 5px solid #C52F30;
+		border-radius: 50%;
+		position: absolute;
+		top: 20px;
+		left: 15px;
+		animation: rond 2s infinite;
+		-webkit-animation: rond 2s infinite;
+		#test {
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			background-color: #5c5c5c;
+			border-radius: 50%;
+			top: 0px;
+			left: 12px;
+		}
+		@keyframes rond {
+			0% {transform : rotate(0deg);}
+			100% {transform : rotate(360deg);}
+		}
+	}
+	#load {
+		color: #C52F30;
+		font-family: calibri;
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+}

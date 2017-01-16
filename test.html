@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*设置滚动条*/
+        body::-webkit-scrollbar{
+            width: 8px;
+        }
+        body::-webkit-scrollbar-button {
+            height: 0px;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: green;/*背景*/
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: red;/*滚动条*/
+            border-radius: 4px;
+        }
+        html{
+            padding: 0;
+            margin:0;
+            height: 1500px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    var isdb;
+    function aa(e){
+        isdb=false;
+        window.setTimeout(cc, 250)
+        e.style.backgroundColor = "green"
+        function cc(){
+            if(isdb!=false)
+                alert("1");
+        }
+
+    }
+    function mDown(ele){
+        ele.innerHTML = "点我"
+        ele.style.backgroundColor = "blue"
+    }
+</script>
+<script>
+    var  clicked = 1;
+    var  clickedTime={
+        'timeA':" ",
+        'timeB':" "
+    };
+    document.getElementById('greenBtn').onclick=function (e) {
+        if(clicked==1){
+            // 单击 function
+            console.log("单击")
+            clicked++;
+        }
+        else if(clicked==2){
+            clickedTime.timeA=new Date();
+            clicked++;
+        }else if(clicked==3){
+            clickedTime.timeB=new Date();
+            if (Math.abs(clickedTime.timeA-clickedTime.timeB)<400){
+                console.log("双击")
+                clicked=1;
+            }else{
+                clickedTime.timeA=new Date();
+            };
+        }
+    }
+</script>
+</body>
+</html>

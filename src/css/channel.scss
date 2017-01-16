@@ -1,0 +1,97 @@
+$channel-bg:#fafafa;
+.list-header{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	padding: 20px 30px 20px 260px;
+	box-sizing: border-box;
+	background: $channel-bg;
+	.list-avatar{
+		position: absolute;
+		top: 20px;
+		left: 30px;
+		width: 200px;
+		height: 200px;
+		border: 1px solid #cccccc;
+		background: url("../img/default_avator.jpg") no-repeat center center;
+		background-size: 100% 100%;
+		border-radius: 50%;
+	}
+	.list-info{
+		.list-title{
+			.list-logo{
+				display: inline-block;
+				width: 40px;
+				height: 24px;
+				color: #fff;
+				font-size: 14px;
+				line-height: 24px;
+				text-align: center;
+				background: #C52F30;
+				border-radius: 3px;
+				margin-top: 4px;
+				margin-right: 8px;
+			}
+			.list-name{
+				font-size: 24px;
+			}
+			p{
+				height: 60px;
+				line-height: 60px;
+				font-size: 14px;
+			}
+		}
+		.list-btn{
+			height: 26px;
+			.list-playAll{
+				width: 124px;
+				height: 24px;
+				border: 1px solid #cccccc;
+				border-radius: 4px;
+				cursor: pointer;
+				.list-text {
+					display: inline-block;
+					width: 90px;
+					height: 24px;
+					line-height: 24px;
+					font-size: 12px;
+					text-align: center;
+					border-right: 1px solid #ccc;
+				}
+				.m-play{
+					color: #C52F30;
+					font-size: 12px;
+					padding-right: 6px;
+				}
+				.list-add{
+					display: inline-block;
+					width: 33px;
+					height: 24px;
+					line-height: 24px;
+					text-align: center;
+				}
+			}
+
+		}
+		.list-comment{
+			font-size: 12px;
+			line-height: 2;
+			color: #7D7D7D;
+			margin-top: 10px;
+			span{
+				color: #000;
+			}
+		}
+
+	}
+	.list-count{
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		height: 26px;
+		line-height: 26px;
+		font-size: 12px;
+		text-indent: 24px;
+		background: url("../img/music.png") no-repeat left center;
+	}
+}
